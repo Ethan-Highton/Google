@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Google</title>
+<style type="text/css">
+a,p,body{
+font-family: arial,sans-serif;
+}
+img{
+	border-style: none;
+}
+.apps{
+	filter: invert(46%) sepia(8%) saturate(664%) hue-rotate(169deg) brightness(90%) contrast(87%);
+	width: 24px;
+	height: 24px;
+}
+.nav__nested-item + 
+.nav__nested-item {
+    margin-left: 1.25rem;
+}
+.logo{
+	display: block;
+	position: absolute;
+	top:27%;
+	left:50%;
+	transform: translate(-50%, -50%);
+	width:272px;height:92px
+}
+li{
+	display: inline;
+}	
+.nav_list{
+display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    padding: 15px 10px 0;
+    padding-right: 30px;
+    margin-top: 0px;
+    margin-bottom:0px;
+}
+.nav_nested-list{
+	list-style-type: none;
+	align-items: center;
+    display: flex;
+ padding: 0;
+
+}
+.nav_item + .nav_item{
+margin-left: 1.25rem;
+}
+a{
+	color: dimgray;
+	font-size: 13px;
+	text-decoration: none;
+}
+.profile{
+	border-radius: 50%;
+}
+.searchborder:hover{
+	box-shadow: 0 1px 6px 0 rgba(32,33,36,0.28);
+    border-color: rgba(223,225,229,0)
+}
+.searchborder{
+	width:584px;
+	height:46px;
+	border: 1px solid #dfe1e5;
+	background:#fff;
+	display: flex;
+	box-shadow: none;
+	border-radius: 24px;
+	margin: 0 auto;
+	position: absolute;
+
+}
+.search{
+	top: 35%;
+    position:absolute;
+    left: 35%;
+    z-index: 3;
+}
+.search-btn:hover {
+    box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+    background-image: -webkit-linear-gradient(top,#f8f8f8,#f1f1f1);
+    background-color: #f8f8f8;
+    border: 1px solid #c6c6c6;
+    color: #222;
+}
+.search-btn{
+    background-image: -webkit-linear-gradient(top,#f5f5f5,#f1f1f1);
+    background-color: #f2f2f2;
+    border: 1px solid #f2f2f2;
+    border-radius: 4px;
+    color: #5F6368;
+    font-family: arial,sans-serif;
+    font-size: 14px;
+    margin: 11px 4px;
+    padding: 0 16px;
+    line-height: 27px;
+    height: 36px;
+    min-width: 54px;
+    cursor: pointer;
+    user-select: none;
+    top: 41%;
+    position:absolute;
+    left: 40%;
+}
+#footer-menu {
+    align-items: center;
+    background: #f2f2f2;
+    border-top: 1px solid #e4e4e4;
+    display: flex;
+    font-size: 15px;
+    justify-content: space-between;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+</style>
+</head>
+<body>
+<!--Header/nav-->
+<nav class="nav">
+	<ul class="nav_list">
+		<li class="nav_main">
+			<ul class="nav_nested-list" style=";">
+				<li class="nav_item">
+					<a href="#" class="nav_link">About</a>
+				</li>
+				<li class="nav_item">
+					<a href="#" class="nav_link">Store</a>
+				</li>
+			</ul>
+		</li>
+		<li class="nav_main" style="float: right; padding: 0px 0px; ">
+			<ul class="nav_nested-list">
+				<li class="nav_item">
+					<a href="#" class="nav_link" >Gmail</a>
+				</li>
+				<li class="nav_item">
+					<a href="#" class="nav_link" >Images</a>
+				</li>
+				<li class="nav_item">
+					<img src="images/apps.svg" class="apps">
+				</li>
+				<li class="nav_item">
+					<img src="images/Ethan.png" class="profile">
+				</li>
+			</ul>
+		</li>
+	</ul>
+</nav>
+<!--image and search bar -->	
+<img style=";"src="images/google.png" alt="Google's logo" class="logo">
+<div class="search">
+	<div class="searchborder" style="">
+		<img class="glass" style="color:#9aa0a6;height:20px;width:20px;margin-top:14px;margin-left: 14px; "src="images/glass.png">
+		<img style="position:absolute;width:13px;height:18.69px;right:20px;margin-top:13.65px; " src="images/voice-search.png">
+</div>
+</div>
+<!--buttons-->
+<div>
+ <button style="left: 42.5%;" class="search-btn">Google Search</button>
+ <button style="left: 50%" class="search-btn">I'm Feeling Lucky</button>	
+</div>
+<footer>
+	<nav id="footer-menu">
+                <div id="fmenu-left">
+                    <ul>
+                        <li><a href="#">Advertising</a></li>
+                        <li><a href="#">Business</a></li>
+                        <li><a href="#">How Search Works</a></li>
+                    </ul>
+                </div>
+                <div id="fmenu-right">
+                    <ul>
+                        <li><a href="#">Privacy</a></li>
+                        <li><a href="#">Terms</a></li>
+                        <li><a href="#">Settings</a></li>
+                    </ul>
+                </div>
+            </nav>
+</footer>
+</body>
+</html>
